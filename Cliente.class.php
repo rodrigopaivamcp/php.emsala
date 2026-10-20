@@ -4,10 +4,10 @@ class Cliente{
     var $nome, $email;
 
     public function setNome($n){
-        $this -> nome = $n;
+        $this->nome = $n;
     }
     public function setEmail($e){
-        &this -> email = $e;
+        $this->email = $e;
     }
     public function getNome(){
         return $this -> nome;
@@ -19,7 +19,7 @@ class Cliente{
     public function validar($n, $e){
         //$this-> nome = $n;
         //$this-> email = $e;
-        &this->setNome($n);
+        $this->setNome($n);
         $this->setEmail($e);
     }
 
